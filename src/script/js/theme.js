@@ -25,12 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
             body.style.setProperty('--color-1', '#1e1e1e'); // Définit la couleur de fond pour le thème sombre
             body.style.setProperty('--color-2', '#303030'); // Définit la couleur de fond du footer pour le thème sombre
             body.style.setProperty('--color-text', '#fafafa'); // Définit la couleur du texte pour le thème sombre
-            iconTheme.src = '/src/img/dark.png'; // Change l'icône du bouton de changement de thème
+            iconTheme.src = 'https://raw.githubusercontent.com/LouisOnraed/recette-de-grand-mere/refs/heads/main/src/img/dark.png'; // Change l'icône du bouton de changement de thème
         } else {
             body.style.setProperty('--color-1', '#fafafa'); // Définit la couleur de fond pour le thème clair
             body.style.setProperty('--color-2', '#e9e9e9'); // Définit la couleur de fond du footer pour le thème clair
             body.style.setProperty('--color-text', '#000000'); // Définit la couleur du texte pour le thème clair
-            iconTheme.src = '/src/img/light.png'; // Change l'icône du bouton de changement de thème
+            iconTheme.src = 'https://raw.githubusercontent.com/LouisOnraed/recette-de-grand-mere/refs/heads/main/src/img/light.png'; // Change l'icône du bouton de changement de thème
         }
     }
 
@@ -42,13 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
             body.style.setProperty('--color-1', '#fafafa'); // Change la couleur de fond pour le thème clair
             body.style.setProperty('--color-2', '#e9e9e9'); // Change la couleur de fond du footer pour le thème clair
             body.style.setProperty('--color-text', '#000000'); // Change la couleur du texte pour le thème clair
-            iconTheme.src = '/src/img/light.png'; // Change l'icône du bouton de changement de thème
+            iconTheme.src = 'https://raw.githubusercontent.com/LouisOnraed/recette-de-grand-mere/refs/heads/main/src/img/light.png'; // Change l'icône du bouton de changement de thème
             setCookie('theme', 'light', 30); // Sauvegarde le thème comme clair
         } else {
             body.style.setProperty('--color-1', '#1e1e1e'); // Change la couleur de fond pour le thème sombre
             body.style.setProperty('--color-2', '#303030'); // Change la couleur de fond du footer pour le thème sombre
             body.style.setProperty('--color-text', '#fafafa'); // Change la couleur du texte pour le thème sombre
-            iconTheme.src = '/src/img/dark.png'; // Change l'icône du bouton de changement de thème
+            iconTheme.src = 'https://raw.githubusercontent.com/LouisOnraed/recette-de-grand-mere/refs/heads/main/src/img/dark.png'; // Change l'icône du bouton de changement de thème
             setCookie('theme', 'dark', 30); // Sauvegarde le thème comme sombre
         }
     });
