@@ -1,0 +1,238 @@
+/* Importation des polices Google */
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+
+/* Styles généraux */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    --color-1: #fafafa;
+    --color-2: #e9e9e9;
+    --color-text: #272727;
+}
+
+body {
+    background-color: var(--color-1);
+    color: var(--color-text);
+    font-family: "Yusei Magic", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    transition: ease-in-out 0.2s;
+}
+
+main {
+    padding-top: 80px;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+footer {
+    padding: 20px;
+    background-color: var(--color-2);
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+/* Styles pour les boutons */
+.bouton,
+input[type="submit"],
+input[type="reset"] {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "Yusei Magic", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #e0a800;
+}
+
+/* Styles pour le formulaire */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: var(--color-1);
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="tel"],
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Styles pour le header et le menu */
+header {
+    z-index: 1000;
+    background: var(--color-1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0px 1px 5px #c0c0c0;
+}
+
+header #logo {
+    width: 60px;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header #logo:hover{
+    transform: scale(1.1);
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+}
+
+#menu li {
+    display: inline;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+#menu li a,
+#menu li p {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+#menu li a:hover {
+    text-decoration: underline;
+}
+
+#iconTheme {
+    width: 15px;
+    height: 15px;
+}
+
+/* Styles pour la boîte de recettes */
+#box {
+    text-align: center;
+}
+
+#box * {
+    border-radius: 10px;
+}
+
+#box>a>.recette {
+    border: 2px solid rgb(83, 83, 83);
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Animation fluide */
+    overflow: hidden;
+}
+
+#box>a>.recette:hover {
+    transform: translateY(-10px);
+    /* Soulève la div de 10px */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+#box>a>.recette>.img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#box>a>.recette>.img>img {
+    border-radius: 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#box>a>.recette *:not(.img, img) {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#box>a>.recette>h3 {
+    text-align: left;
+}
+
+/* Styles pour les images */
+img.illustration {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+}
+
+img.gif {
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Styles pour les gifs */
+div#main {
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Styles divers */
+.inline {
+    display: inline;
+}

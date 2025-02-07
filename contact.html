@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/script/css/style.css" rel="stylesheet">
+    <script src="src/script/js/theme.js"></script>
+    <title>Contact | Recette de grand-mère</title>
+</head>
+
+<body>
+    <!-- En-tête du site -->
+    <header>
+        <!-- Logo et menu de navigation -->
+        <a href="index.html"><img src="src/img/logo.png" alt="Logo" id="logo"></a>
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="recettes.html">Les recettes</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><button id="theme-button" class="bouton"><img id="icon-theme" src="src/img/light.png">&nbsp;<p class="inline">Thème</p></button></li>
+        </ul>
+    </header>
+
+    <!-- Contenu principal -->
+    <main>
+        <!-- Formulaire de contact -->
+        <h1>Contactez-nous</h1>
+        <form action="#">
+            <!-- Section de retour sur le site -->
+            <fieldset>
+                <legend>Votre avis :</legend>
+                <p>Que pensez-vous de ce site ?</p>
+                <input type="radio" name="avis" value="j'aime" id="aime" checked="checked" class="inline" />
+                <label for="aime" class="inline">J'aime</label>
+                <input type="radio" name="avis" value="je n'aime pas" id="aime_pas" class="inline" />
+                <label for="aime_pas" class="inline">Je n'aime pas</label>
+                <br><br>
+                <label for="utilise">Comptez-vous y revenir ?</label>
+                <select name="utilise" id="utilise">
+                    <option value="toujours">Toujours</option>
+                    <option value="parfois">Parfois</option>
+                    <option value="jamais">Jamais</option>
+                </select>
+            </fieldset>
+            <!-- Section de renseignement des informations de contact de l'utilisateur -->
+            <fieldset>
+                <legend>Vos coordonnées :</legend>
+                <label for="nom">Votre nom :</label>
+                <input type="text" name="nom" id="nom" size="20" maxlength="40" />
+                <label for="prenom">Votre prénom :</label>
+                <input type="text" name="prenom" id="prenom" size="20" maxlength="40" />
+                <label for="email">Votre email :</label>
+                <input type="email" name="email" size="20" maxlength="40" id="email" />
+                <label for="telephone">Votre téléphone :</label>
+                <input type="tel" name="telephone" id="telephone" size="20" maxlength="15" />
+                <label for="adresse">Votre adresse :</label>
+                <input type="text" name="adresse" id="adresse" size="50" maxlength="100" />
+                <label for="codepostal">Code postal :</label>
+                <input type="text" name="codepostal" id="codepostal" size="10" maxlength="10" />
+                <label for="ville">Ville :</label>
+                <input type="text" name="ville" id="ville" size="20" maxlength="40" />
+                <label for="pays">Pays :</label>
+                <input type="text" name="pays" id="pays" size="20" maxlength="40" />
+                <label for="comments">Vos commentaires :</label>
+                <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Confidentialité :</legend>
+                <input type="checkbox" name="utilisation" id="utilisation" class="inline"/>
+                <label for="utilisation" class="inline">J'accepte l'utilisation de mes informations personnelles à des fins de statistiques</label>
+                <br>
+                <input type="checkbox" name="conditions" id="conditions" class="inline"/>
+                <label for="conditions" class="inline">J'accepte les conditions d'utilisation du site.</label>
+            </fieldset>
+            <!-- Bouton d'envoi -->
+            <fieldset>
+                <input type="submit" value="Envoyer" class="bouton" />
+            </fieldset>
+        </form>
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <!-- Crédits -->
+        <p>Site réalisé par Louis Onraed</p>
+        <p>Images générées par <a href="https://openai.com/index/dall-e-3/" target="_blank">OpenAI Dall-E</a> et par <a href="https://copilot.microsoft.com/" target="_blank">Microsoft Copilot</a></p>
+        <p><a href="conditions.html">Conditions d'utilisation</a></p>
+        <p>©2025 Recette de grand-mère</p>
+    </footer>
+</body>
+
+</html>
