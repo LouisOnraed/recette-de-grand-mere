@@ -71,10 +71,10 @@ Pour installer et exécuter ce projet localement, suivez ces étapes :
 
 1. Clonez le dépôt :
     ```bash
-    git clone <URL_DU_DEPOT>
+    git clone <https://github.com/LouisOnraed/recette-de-grand-mere.git>
     ```
 
-2. Ouvrez le fichier [index.html]() dans votre navigateur préféré.
+2. Ouvrez le fichier [index.html](https://github.com/LouisOnraed/recette-de-grand-mere/blob/main/index.html) dans votre navigateur préféré.
 
 ## Utilisation
 
