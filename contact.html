@@ -8,6 +8,7 @@
     <link href="src/script/css/style.css" rel="stylesheet">
     <script src="src/script/js/theme.js"></script>
     <script src="src/script/js/weather.js"></script>
+    <script src="src/script/js/captcha.js"></script>
     <link rel="icon" type="image/png" href="src/img/logo.png" />
     <title>Contact | Recette de grand-madre</title>
 </head>
@@ -21,7 +22,8 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="recettes.html">Les recettes</a></li>
             <li><a href="#">Contact</a></li>
-            <li><button id="theme-button" class="bouton"><img id="icon-theme" src="src/img/light.png">&nbsp;<p class="inline">Thème</p></button></li>
+            <li><button id="theme-button" class="bouton"><img id="icon-theme" src="src/img/light.png">&nbsp;<p
+                        class="inline">Thème</p></button></li>
         </ul>
     </header>
 
@@ -29,7 +31,7 @@
     <main>
         <!-- Formulaire de contact -->
         <h1>Contactez-nous</h1>
-        <form action="#">
+        <form action="" method="post">
             <!-- Section de retour sur le site -->
             <fieldset>
                 <legend>Votre avis :</legend>
@@ -70,11 +72,18 @@
             </fieldset>
             <fieldset>
                 <legend>Confidentialité :</legend>
-                <input type="checkbox" name="utilisation" id="utilisation" class="inline"/>
-                <label for="utilisation" class="inline">J'accepte l'utilisation de mes informations personnelles à des fins de statistiques</label>
+                <input type="checkbox" name="utilisation" id="utilisation" class="inline" />
+                <label for="utilisation" class="inline">J'accepte l'utilisation de mes informations personnelles à des
+                    fins de statistiques</label>
                 <br>
-                <input type="checkbox" name="conditions" id="conditions" class="inline"/>
+                <input type="checkbox" name="conditions" id="conditions" class="inline" />
                 <label for="conditions" class="inline">J'accepte les conditions d'utilisation du site.</label>
+            </fieldset>
+            <fieldset>
+                <legend>Captcha :</legend>
+                <p>Attrape le carré vert pour prouver que tu n'es pas un robot !</p>
+                <div id="captcha-container"></div>
+                <p id="captcha-message"></p>
             </fieldset>
             <!-- Bouton d'envoi -->
             <fieldset>
@@ -87,7 +96,8 @@
     <footer>
         <!-- Crédits -->
         <p>Site réalisé par Louis Onraed</p>
-        <p>Images générées par <a href="https://openai.com/index/dall-e-3/" target="_blank">OpenAI Dall-E</a> et par <a href="https://copilot.microsoft.com/" target="_blank">Microsoft Copilot</a></p>
+        <p>Images générées par <a href="https://openai.com/index/dall-e-3/" target="_blank">OpenAI Dall-E</a> et par <a
+                href="https://copilot.microsoft.com/" target="_blank">Microsoft Copilot</a></p>
         <p><a href="conditions.html">Conditions d'utilisation</a></p>
         <p>©2025 Recette de grand-madre</p>
         <div id="meteo">
