@@ -1,20 +1,15 @@
-const API_KEY = 'aaa70a90a605a14bf4ff3af2d4d6bc39';
-const LAT = 41.9028; // Latitude de Rome
-const LON = 12.4964; // Longitude de Rome
-const URL = `https://api.openweathermap.org/data/3.0/onecall?lat=${LAT}&lon=${LON}&units=metric&exclude=minutely,hourly,daily,alerts&appid=${API_KEY}`;
+const apiKey = "aaa70a90a605a14bf4ff3af2d4d6bc39";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
-async function getWeather() {
-    try {
-        const response = await fetch(URL);
-        if (!response.ok) {
-            throw new Error("Erreur lors de la récupération des données météo");
-        }
+async function weather() {
+    const response = await fetch(apiURL + "rome" + `&appid=${apiKey}`);
+    if (response.ok == false) {
+        console.log('Error Weather');
+    }
+    else {
         const data = await response.json();
-        const temperature = data.current.temp;
-        console.log(`La température actuelle à Rome est de ${temperature}°C`);
-    } catch (error) {
-        console.error("Erreur :", error);
+        console.log(Math.round(data.main.temp) + "°C")
+        document.getElementById("weatherInfo").innerText = Math.round(data.main.temp) + "°C"
     }
 }
-
-getWeather();
+weather()

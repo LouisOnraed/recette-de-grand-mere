@@ -232,6 +232,16 @@ div#main {
     flex-wrap: wrap;
 }
 
+/* */
+#meteo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #a5a5a5;
+    border-radius: 10px 0px 0px 0px;
+    padding: 0px 20px 0px 20px;
+}
+
 /* Styles divers */
 .inline {
     display: inline;
