@@ -44,12 +44,14 @@ document.addEventListener('DOMContentLoaded', function () {
             body.style.setProperty('--color-text', '#000000'); // Change la couleur du texte pour le thème clair
             iconTheme.src = '../src/img/light.png'; // Change l'icône du bouton de changement de thème
             setCookie('theme', 'light', 30); // Sauvegarde le thème comme clair
+            console.logt('theme-l');
         } else {
             body.style.setProperty('--color-1', '#1e1e1e'); // Change la couleur de fond pour le thème sombre
             body.style.setProperty('--color-2', '#303030'); // Change la couleur de fond du footer pour le thème sombre
             body.style.setProperty('--color-text', '#fafafa'); // Change la couleur du texte pour le thème sombre
             iconTheme.src = '../src/img/dark.png'; // Change l'icône du bouton de changement de thème
             setCookie('theme', 'dark', 30); // Sauvegarde le thème comme sombre
+            console.logt('theme-d');
         }
     });
 });
