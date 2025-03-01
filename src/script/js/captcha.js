@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     target.addEventListener("click", function () {
-        messageEl.innerHTML = "<input type='checkbox' required selected> Bien joué ! Tu n'es pas un robot !";
+        messageEl.innerHTML = "Bien joué ! Tu n'es pas un robot !";
+        document.getElementById("captcha").style.display = "inline";
+        document.getElementById("captcha").checked = true;
     });
 });

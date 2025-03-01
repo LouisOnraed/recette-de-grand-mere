@@ -107,6 +107,10 @@ select {
     border-radius: 5px;
 }
 
+#captcha {
+    display: none;
+}
+
 /* Styles pour le header et le menu */
 header {
     z-index: 1000;
@@ -232,7 +236,7 @@ div#main {
     flex-wrap: wrap;
 }
 
-/* */
+/* Style pour la météo */
 #meteo {
     position: fixed;
     bottom: 0;

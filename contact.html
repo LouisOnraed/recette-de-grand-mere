@@ -31,18 +31,18 @@
     <main>
         <!-- Formulaire de contact -->
         <h1>Contactez-nous</h1>
-        <form action="" method="post">
+        <form action="contact.html" method="get">
             <!-- Section de retour sur le site -->
             <fieldset>
                 <legend>Votre avis :</legend>
                 <p>Que pensez-vous de ce site ?</p>
-                <input type="radio" name="avis" value="j'aime" id="aime" checked="checked" class="inline" />
+                <input type="radio" name="avis" value="j'aime" id="aime" checked="checked" class="inline" required/>
                 <label for="aime" class="inline">J'aime</label>
-                <input type="radio" name="avis" value="je n'aime pas" id="aime_pas" class="inline" />
+                <input type="radio" name="avis" value="je n'aime pas" id="aime_pas" class="inline" required/>
                 <label for="aime_pas" class="inline">Je n'aime pas</label>
                 <br><br>
                 <label for="utilise">Comptez-vous y revenir ?</label>
-                <select name="utilise" id="utilise">
+                <select name="utilise" id="utilise" required>
                     <option value="toujours">Toujours</option>
                     <option value="parfois">Parfois</option>
                     <option value="jamais">Jamais</option>
@@ -52,38 +52,39 @@
             <fieldset>
                 <legend>Vos coordonnées :</legend>
                 <label for="nom">Votre nom :</label>
-                <input type="text" name="nom" id="nom" size="20" maxlength="40" />
+                <input type="text" name="nom" id="nom" size="20" maxlength="40" required/>
                 <label for="prenom">Votre prénom :</label>
-                <input type="text" name="prenom" id="prenom" size="20" maxlength="40" />
+                <input type="text" name="prenom" id="prenom" size="20" maxlength="40" required/>
                 <label for="email">Votre email :</label>
-                <input type="email" name="email" size="20" maxlength="40" id="email" />
+                <input type="email" name="email" size="20" maxlength="40" id="email" required/>
                 <label for="telephone">Votre téléphone :</label>
-                <input type="tel" name="telephone" id="telephone" size="20" maxlength="15" />
+                <input type="tel" name="telephone" id="telephone" size="20" maxlength="15" required/>
                 <label for="adresse">Votre adresse :</label>
-                <input type="text" name="adresse" id="adresse" size="50" maxlength="100" />
+                <input type="text" name="adresse" id="adresse" size="50" maxlength="100" required/>
                 <label for="codepostal">Code postal :</label>
-                <input type="text" name="codepostal" id="codepostal" size="10" maxlength="10" />
+                <input type="text" name="codepostal" id="codepostal" size="10" maxlength="10" required/>
                 <label for="ville">Ville :</label>
-                <input type="text" name="ville" id="ville" size="20" maxlength="40" />
+                <input type="text" name="ville" id="ville" size="20" maxlength="40" required/>
                 <label for="pays">Pays :</label>
-                <input type="text" name="pays" id="pays" size="20" maxlength="40" />
+                <input type="text" name="pays" id="pays" size="20" maxlength="40" required/>
                 <label for="comments">Vos commentaires :</label>
-                <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                <textarea name="comments" id="comments" cols="30" rows="5" required></textarea>
             </fieldset>
             <fieldset>
                 <legend>Confidentialité :</legend>
-                <input type="checkbox" name="utilisation" id="utilisation" class="inline" />
+                <input type="checkbox" name="utilisation" id="utilisation" class="inline" required/>
                 <label for="utilisation" class="inline">J'accepte l'utilisation de mes informations personnelles à des
                     fins de statistiques</label>
                 <br>
-                <input type="checkbox" name="conditions" id="conditions" class="inline" />
+                <input type="checkbox" name="conditions" id="conditions" class="inline" required/>
                 <label for="conditions" class="inline">J'accepte les conditions d'utilisation du site.</label>
             </fieldset>
             <fieldset>
                 <legend>Captcha :</legend>
                 <p>Attrape le carré vert pour prouver que tu n'es pas un robot !</p>
                 <div id="captcha-container"></div>
-                <p id="captcha-message"></p>
+                <input name="captcha" id="captcha" class="inline" type="checkbox" required/>
+                <label for="captcha" class="inline" id="captcha-message"></label>
             </fieldset>
             <!-- Bouton d'envoi -->
             <fieldset>
