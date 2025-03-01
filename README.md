@@ -1,6 +1,6 @@
-# Recette de grand-mère
+# Recette de grand-madre
 
-Bienvenue sur le site "Recette de grand-mère", un projet réalisé dans le cadre de la spécialité NSI (Numérique et Sciences Informatiques). Ce site est dédié à la cuisine italienne et propose une multitude de recettes savoureuses et faciles à réaliser.
+Bienvenue sur le site "Recette de grand-madre", un projet réalisé dans le cadre de la spécialité NSI (Numérique et Sciences Informatiques). Ce site est dédié à la cuisine italienne et propose une multitude de recettes savoureuses et faciles à réaliser.
 
 ## Table des matières
 
