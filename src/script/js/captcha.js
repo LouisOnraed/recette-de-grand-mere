@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const messageEl = document.getElementById("captcha-message");
 
     captchaContainer.innerHTML = `
-<div id="game-area" style="position:relative; width:300px; height:200px; border:1px solid black; overflow:hidden;">
+<div id="game-area" style="position:relative; width:300px; height:200px; border:1px solid rgb(204, 204, 204); overflow:hidden;">
 <div id="target" style="width:30px; height:30px; background-color:green; position:absolute; top:50px; left:50px; cursor:pointer;"></div>
 </div>
 `;
